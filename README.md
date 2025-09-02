@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIMNIS UR - Himpunan Mahasiswa Nias Universitas Riau</title>
-    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <style>
         :root {
             --primary-color: #C8102E;
@@ -40,18 +38,15 @@
             font-size: 1.5rem;
             color: var(--secondary-color) !important;
         }
-
         .navbar-nav .nav-link {
             color: var(--secondary-color) !important;
             font-weight: 500;
             margin: 0 10px;
             transition: all 0.3s ease;
         }
-
         .navbar-nav .nav-link:hover {
             color: var(--accent-color) !important;
         }
-
         /* Hero Section */
         .hero-section {
             position: relative;
@@ -65,19 +60,16 @@
             text-align: center;
             color: white;
         }
-
         .hero-content h1 {
             font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-
         .hero-content p {
             font-size: 1.3rem;
             margin-bottom: 30px;
         }
-
         .btn-custom {
             background-color: var(--primary-color);
             color: white;
@@ -88,23 +80,19 @@
             transition: all 0.3s ease;
             border: none;
         }
-
         .btn-custom:hover {
             background-color: var(--accent-color);
             color: var(--dark-color);
             transform: translateY(-2px);
         }
-
         /* Section Styles */
         .section {
             padding: 80px 0;
         }
-
         .section-title {
             text-align: center;
             margin-bottom: 50px;
         }
-
         .section-title h2 {
             font-size: 2.5rem;
             font-weight: 700;
@@ -112,7 +100,6 @@
             position: relative;
             display: inline-block;
         }
-
         .section-title h2::after {
             content: '';
             position: absolute;
@@ -123,7 +110,6 @@
             height: 4px;
             background-color: var(--accent-color);
         }
-
         /* About Section */
         .about-card {
             background: white;
@@ -133,17 +119,14 @@
             height: 100%;
             transition: transform 0.3s ease;
         }
-
         .about-card:hover {
             transform: translateY(-10px);
         }
-
         .about-card i {
             font-size: 3rem;
             color: var(--primary-color);
             margin-bottom: 20px;
         }
-
         /* Program Cards */
         .program-card {
             background: white;
@@ -153,22 +136,18 @@
             transition: all 0.3s ease;
             margin-bottom: 30px;
         }
-
         .program-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
-
         .program-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
-
         .program-card-body {
             padding: 20px;
         }
-
         /* Gallery */
         .gallery-item {
             position: relative;
@@ -177,18 +156,15 @@
             margin-bottom: 20px;
             cursor: pointer;
         }
-
         .gallery-item img {
             width: 100%;
             height: 250px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-
         .gallery-item:hover img {
             transform: scale(1.1);
         }
-
         .gallery-overlay {
             position: absolute;
             top: 0;
@@ -202,11 +178,9 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
-
         /* News Section */
         .news-card {
             background: white;
@@ -216,27 +190,22 @@
             transition: all 0.3s ease;
             height: 100%;
         }
-
         .news-card:hover {
             transform: translateY(-5px);
         }
-
         .news-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
-
         .news-card-body {
             padding: 20px;
         }
-
         .news-date {
             color: var(--primary-color);
             font-size: 0.9rem;
             font-weight: 500;
         }
-
         /* Contact Section */
         .contact-info {
             background: var(--primary-color);
@@ -245,61 +214,51 @@
             border-radius: 15px;
             margin-bottom: 30px;
         }
-
         .contact-info i {
             font-size: 2rem;
             margin-bottom: 15px;
             color: var(--accent-color);
         }
-
         .form-control, .form-select {
             border-radius: 10px;
             border: 1px solid #ddd;
             padding: 12px;
             margin-bottom: 20px;
         }
-
         .form-control:focus, .form-select:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.2rem rgba(200, 16, 46, 0.25);
         }
-
         /* Footer */
         footer {
             background-color: var(--dark-color);
             color: white;
             padding: 50px 0 20px;
         }
-
         .footer-widget h4 {
             color: var(--accent-color);
             margin-bottom: 20px;
             font-weight: 600;
         }
-
         .social-links a {
             color: white;
             font-size: 1.5rem;
             margin-right: 15px;
             transition: color 0.3s ease;
         }
-
         .social-links a:hover {
             color: var(--accent-color);
         }
-
         /* Modal Login */
         .modal-content {
             border-radius: 15px;
             border: none;
         }
-
         .modal-header {
             background-color: var(--primary-color);
             color: white;
             border-radius: 15px 15px 0 0;
         }
-
         /* Chat Widget */
         #chatWidget {
             position: fixed;
@@ -308,7 +267,6 @@
             z-index: 1000;
             display: none;
         }
-
         #chatButton {
             position: fixed;
             bottom: 20px;
@@ -325,12 +283,10 @@
             z-index: 999;
             transition: all 0.3s ease;
         }
-
         #chatButton:hover {
             background-color: var(--accent-color);
             transform: scale(1.1);
         }
-
         #chatContainer {
             width: 350px;
             height: 500px;
@@ -341,7 +297,6 @@
             flex-direction: column;
             overflow: hidden;
         }
-
         #chatHeader {
             background-color: var(--primary-color);
             color: white;
@@ -350,51 +305,43 @@
             justify-content: space-between;
             align-items: center;
         }
-
         #chatMessages {
             flex: 1;
             padding: 15px;
             overflow-y: auto;
             background-color: #f5f5f5;
         }
-
         .chat-message {
             margin-bottom: 15px;
             padding: 10px;
             border-radius: 10px;
             max-width: 80%;
         }
-
         .chat-message.sent {
             background-color: var(--primary-color);
             color: white;
             margin-left: auto;
         }
-
         .chat-message.received {
             background-color: white;
             border: 1px solid #ddd;
         }
-
         .chat-message .sender {
             font-weight: bold;
             font-size: 0.8rem;
             margin-bottom: 5px;
         }
-
         .chat-message .time {
             font-size: 0.7rem;
             opacity: 0.7;
             margin-top: 5px;
         }
-
         #chatInput {
             display: flex;
             padding: 10px;
             background-color: white;
             border-top: 1px solid #ddd;
         }
-
         #chatInput input {
             flex: 1;
             border: 1px solid #ddd;
@@ -402,7 +349,6 @@
             padding: 8px 15px;
             margin-right: 10px;
         }
-
         #chatInput button {
             background-color: var(--primary-color);
             color: white;
@@ -412,7 +358,6 @@
             height: 40px;
             cursor: pointer;
         }
-
         /* Notification */
         .notification-container {
             position: fixed;
@@ -421,7 +366,6 @@
             z-index: 1050;
             max-width: 350px;
         }
-
         .notification {
             background-color: white;
             border-radius: 10px;
@@ -431,7 +375,6 @@
             border-left: 4px solid var(--primary-color);
             animation: slideIn 0.3s ease;
         }
-
         @keyframes slideIn {
             from {
                 transform: translateX(100%);
@@ -442,7 +385,6 @@
                 opacity: 1;
             }
         }
-
         .notification .close {
             position: absolute;
             top: 10px;
@@ -450,7 +392,6 @@
             cursor: pointer;
             font-size: 18px;
         }
-
         /* Dashboard Admin */
         #adminDashboard {
             display: none;
@@ -459,7 +400,6 @@
             border-radius: 15px;
             margin-top: 30px;
         }
-
         .stat-card {
             background: white;
             border-radius: 15px;
@@ -469,22 +409,18 @@
             margin-bottom: 20px;
             transition: transform 0.3s ease;
         }
-
         .stat-card:hover {
             transform: translateY(-5px);
         }
-
         .stat-card i {
             font-size: 2.5rem;
             margin-bottom: 15px;
         }
-
         .stat-card h3 {
             font-size: 2rem;
             font-weight: 700;
             margin: 0;
         }
-
         /* Loading Animation */
         .loader {
             position: fixed;
@@ -499,7 +435,6 @@
             z-index: 9999;
             transition: opacity 0.5s ease;
         }
-
         .spinner {
             width: 50px;
             height: 50px;
@@ -508,22 +443,18 @@
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
-
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
         /* Responsive */
         @media (max-width: 768px) {
             .hero-content h1 {
                 font-size: 2.5rem;
             }
-            
             .section {
                 padding: 60px 0;
             }
-
             #chatContainer {
                 width: 90%;
                 height: 400px;
@@ -536,10 +467,8 @@
     <div class="loader" id="loader">
         <div class="spinner"></div>
     </div>
-
     <!-- Notification Container -->
     <div class="notification-container" id="notificationContainer"></div>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
@@ -578,7 +507,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
@@ -587,7 +515,6 @@
             <a href="#about" class="btn btn-custom">Kenali Kami Lebih Dekat</a>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
@@ -620,7 +547,6 @@
             </div>
         </div>
     </section>
-
     <!-- Programs Section -->
     <section id="programs" class="section" style="background-color: var(--light-bg);">
         <div class="container">
@@ -661,7 +587,6 @@
             </div>
         </div>
     </section>
-
     <!-- Gallery Section -->
     <section id="gallery" class="section">
         <div class="container">
@@ -720,7 +645,6 @@
             </div>
         </div>
     </section>
-
     <!-- News Section -->
     <section id="news" class="section" style="background-color: var(--light-bg);">
         <div class="container">
@@ -732,7 +656,6 @@
             </div>
         </div>
     </section>
-
     <!-- Registration Section -->
     <section class="section">
         <div class="container">
@@ -814,7 +737,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section" style="background-color: var(--light-bg);">
         <div class="container">
@@ -865,7 +787,6 @@
             </div>
         </div>
     </section>
-
     <!-- Admin Dashboard (Hidden by default) -->
     <section id="adminDashboard" class="section">
         <div class="container">
@@ -904,7 +825,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -952,7 +872,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -984,7 +903,6 @@
             </div>
         </div>
     </div>
-
     <!-- Chat Widget -->
     <button id="chatButton" onclick="toggleChat()">
         <i class="fas fa-comments"></i>
@@ -1012,15 +930,12 @@
             </div>
         </div>
     </div>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
-    
     <script>
         // Firebase Configuration - GANTI dengan konfigurasi Firebase Anda
         const firebaseConfig = {
@@ -1032,18 +947,14 @@
             messagingSenderId: "YOUR_SENDER_ID",
             appId: "YOUR_APP_ID"
         };
-
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const database = firebase.database();
-
         // Google Sheets Configuration - GANTI dengan URL Apps Script Anda
         const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/WEB_APP_ID/exec';
-
         // Backend Server Configuration - GANTI dengan URL server Anda
         const BACKEND_URL = 'http://localhost:3000/api';
-
         // Hide loader when page is loaded
         window.addEventListener('load', function() {
             setTimeout(function() {
@@ -1052,17 +963,13 @@
                     document.getElementById('loader').style.display = 'none';
                 }, 500);
             }, 1000);
-            
             // Check login status
             checkLoginStatus();
-            
             // Load news
             loadNews();
-            
             // Load dashboard stats if admin
             loadDashboardStats();
         });
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1076,7 +983,6 @@
                 }
             });
         });
-
         // Navbar background on scroll
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
@@ -1086,12 +992,10 @@
                 navbar.style.backgroundColor = 'var(--primary-color)';
             }
         });
-
         // Check login status
         function checkLoginStatus() {
             const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
             const userData = JSON.parse(localStorage.getItem('userData') || '{}');
-            
             if (isLoggedIn && userData.nim) {
                 const loginLink = document.getElementById('loginLink');
                 loginLink.innerHTML = `<i class="fas fa-user"></i> ${userData.nama}`;
@@ -1102,27 +1006,21 @@
                         logout();
                     }
                 });
-                
                 // Show chat button for logged in users
                 document.getElementById('chatButton').style.display = 'block';
-                
                 // Show admin dashboard if admin
                 if (userData.role === 'admin') {
                     document.getElementById('adminDashboard').style.display = 'block';
                 }
             }
         }
-
         // Registration Form Handler (Google Sheets + Firebase)
         document.getElementById('registrationForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
             // Show loading
             showNotification('Memproses pendaftaran...', 'info');
-            
             // Send to Google Sheets
             fetch(`${GOOGLE_SCRIPT_URL}?sheetName=Registrations`, {
                 method: 'POST',
@@ -1133,7 +1031,6 @@
                 // Create Firebase user
                 const email = `${data.nim}@unri.ac.id`;
                 const password = 'himnis123'; // Default password
-                
                 auth.createUserWithEmailAndPassword(email, password)
                     .then((userCredential) => {
                         // Save additional data to Firebase
@@ -1148,7 +1045,6 @@
                             role: 'member',
                             registrationDate: new Date().toISOString()
                         });
-                        
                         // Send to backend server
                         fetch(`${BACKEND_URL}/register`, {
                             method: 'POST',
@@ -1157,7 +1053,6 @@
                             },
                             body: JSON.stringify(data)
                         });
-                        
                         showNotification('Pendaftaran berhasil! Kami telah mengirim email konfirmasi.', 'success');
                         this.reset();
                     })
@@ -1171,17 +1066,13 @@
                 showNotification('Terjadi kesalahan. Silakan coba lagi.', 'error');
             });
         });
-
         // Contact Form Handler (Google Sheets + Backend)
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
             // Show loading
             showNotification('Mengirim pesan...', 'info');
-            
             // Send to Google Sheets
             fetch(`${GOOGLE_SCRIPT_URL}?sheetName=Contacts`, {
                 method: 'POST',
@@ -1197,7 +1088,6 @@
                     },
                     body: JSON.stringify(data)
                 });
-                
                 showNotification('Pesan Anda telah terkirim! Kami akan segera merespons.', 'success');
                 this.reset();
             })
@@ -1206,27 +1096,21 @@
                 showNotification('Terjadi kesalahan. Silakan coba lagi.', 'error');
             });
         });
-
         // Login Form Handler (Firebase + Backend)
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
             // Show loading
             showNotification('Memproses login...', 'info');
-            
             // Login with Firebase
             const email = `${data.nim}@unri.ac.id`;
-            
             auth.signInWithEmailAndPassword(email, data.password)
                 .then((userCredential) => {
                     // Get user data from Firebase
                     database.ref('users/' + userCredential.user.uid).once('value')
                         .then((snapshot) => {
                             const userData = snapshot.val();
-                            
                             // Verify with backend
                             fetch(`${BACKEND_URL}/login`, {
                                 method: 'POST',
@@ -1241,11 +1125,9 @@
                                     // Save login state
                                     localStorage.setItem('isLoggedIn', 'true');
                                     localStorage.setItem('userData', JSON.stringify(userData));
-                                    
                                     showNotification('Login berhasil! Selamat datang ' + userData.nama, 'success');
                                     bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
                                     this.reset();
-                                    
                                     // Reload to update UI
                                     location.reload();
                                 } else {
@@ -1258,13 +1140,10 @@
                     showNotification('Login gagal: ' + error.message, 'error');
                 });
         });
-
         // Newsletter Form Handler
         document.getElementById('newsletterForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const email = this.querySelector('input[name="email"]').value;
-            
             // Send to Google Sheets
             fetch(`${GOOGLE_SCRIPT_URL}?sheetName=Newsletter`, {
                 method: 'POST',
@@ -1279,7 +1158,6 @@
                 showNotification('Terjadi kesalahan. Silakan coba lagi.', 'error');
             });
         });
-
         // Logout function
         function logout() {
             auth.signOut()
@@ -1290,7 +1168,6 @@
                     location.reload();
                 });
         }
-
         // Load news from backend
         function loadNews() {
             fetch(`${BACKEND_URL}/news`)
@@ -1298,7 +1175,6 @@
                 .then(data => {
                     const newsContainer = document.getElementById('newsContainer');
                     newsContainer.innerHTML = '';
-                    
                     data.forEach(news => {
                         const newsCard = `
                             <div class="col-md-4 mb-4">
@@ -1365,11 +1241,9 @@
                     `;
                 });
         }
-
         // Load dashboard stats
         function loadDashboardStats() {
             const userData = JSON.parse(localStorage.getItem('userData') || '{}');
-            
             if (userData.role === 'admin') {
                 // Fetch stats from backend
                 fetch(`${BACKEND_URL}/stats`)
@@ -1385,23 +1259,18 @@
                     });
             }
         }
-
         // Chat functions
         function toggleChat() {
             const chatWidget = document.getElementById('chatWidget');
             chatWidget.style.display = chatWidget.style.display === 'none' ? 'block' : 'none';
         }
-
         function sendMessage() {
             const input = document.getElementById('messageInput');
             const message = input.value.trim();
-            
             if (message) {
                 const userData = JSON.parse(localStorage.getItem('userData') || '{}');
-                
                 // Add message to UI
                 addMessageToChat(message, userData.nama || 'Anonymous', 'sent');
-                
                 // Send to Firebase
                 database.ref('chat').push({
                     user: userData.nama || 'Anonymous',
@@ -1409,9 +1278,7 @@
                     message: message,
                     timestamp: new Date().toISOString()
                 });
-                
                 input.value = '';
-                
                 // Simulate bot response
                 setTimeout(() => {
                     const responses = [
@@ -1424,7 +1291,6 @@
                 }, 1000);
             }
         }
-
         function addMessageToChat(message, sender, type) {
             const chatMessages = document.getElementById('chatMessages');
             const messageElement = document.createElement('div');
@@ -1437,45 +1303,37 @@
             chatMessages.appendChild(messageElement);
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
-
         // Listen for new chat messages
         database.ref('chat').on('child_added', (snapshot) => {
             const message = snapshot.val();
             const userData = JSON.parse(localStorage.getItem('userData') || '{}');
-            
             // Don't show own messages
             if (message.nim !== userData.nim) {
                 addMessageToChat(message.message, message.user, 'received');
             }
         });
-
         // Notification system
         function showNotification(message, type = 'info') {
             const container = document.getElementById('notificationContainer');
             const notification = document.createElement('div');
             notification.className = 'notification';
-            
             const colors = {
                 success: '#28a745',
                 error: '#dc3545',
                 warning: '#ffc107',
                 info: '#17a2b8'
             };
-            
             notification.style.borderLeftColor = colors[type] || colors.info;
             notification.innerHTML = `
                 <span class="close" onclick="this.parentElement.remove()">&times;</span>
                 <div>${message}</div>
             `;
-            
             container.appendChild(notification);
-            
             // Auto remove after 5 seconds
             setTimeout(() => {
                 notification.remove();
             }, 5000);
         }
-
         // Gallery lightbox effect
         document.querySelectorAll('.gallery-item').forEach(item => {
             item.addEventListener('click', function() {
@@ -1499,7 +1357,6 @@
                 document.body.appendChild(modal);
             });
         });
-
         // Listen for login state changes
         auth.onAuthStateChanged((user) => {
             if (user) {
