@@ -20,25 +20,21 @@
             --dark-color: #1a1a1a;
             --light-bg: #f8f9fa;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--dark-color);
         }
-
         /* Navbar */
         .navbar {
             background-color: var(--primary-color) !important;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
         }
-
         .navbar-brand {
             font-weight: 700;
             font-size: 1.5rem;
